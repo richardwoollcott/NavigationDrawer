@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="NavigationDrawer/NavigationDrawer.csproj">
+  <MonoDevelop.Ide.ItemProperties.NavigationDrawer PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NavigationDrawer/Resources/values/Strings.xml">
+    <Files>
+      <File FileName="NavigationDrawer/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="NavigationDrawer/MailFragment.cs" Line="29" Column="72" />
+      <File FileName="NavigationDrawer/ContactsFragment.cs" Line="29" Column="56" />
+      <File FileName="NavigationDrawer/Resources/values/Strings.xml" Line="7" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
