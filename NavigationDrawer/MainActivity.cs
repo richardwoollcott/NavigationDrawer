@@ -6,11 +6,26 @@ using Android.OS;
 using Android.Support.V4.Widget;
 using Android.Support.V7.App;
 
+using System.Collections.Generic;
+using GalaSoft.MvvmLight.Helpers;
+using GalaSoft.MvvmLight.Views;
+using NavigationDrawer.ViewModel;
+
 namespace NavigationDrawer
 {
 	[Activity (Label = "NavigationDrawer", MainLauncher = true, Icon = "@mipmap/icon")]
-	public class MainActivity : Activity
+	public class MainActivity : ActivityBase
 	{
+		private readonly List<Binding> bindings = new List<Binding> ();
+
+		private MainViewModel Vm
+		{
+			get
+			{
+				return App.Locator.Main;
+			}
+		}
+
 		DrawerLayout drawerLayout;
 		ActionBarDrawerToggle drawerToggle;
 		ListView drawerListView;
