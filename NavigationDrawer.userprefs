@@ -1,14 +1,22 @@
 ﻿<Properties StartupItem="NavigationDrawer/NavigationDrawer.csproj">
-  <MonoDevelop.Ide.ItemProperties.NavigationDrawer PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NavigationDrawer/Resources/values/Strings.xml">
+  <MonoDevelop.Ide.ItemProperties.NavigationDrawer AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NavigationDrawer/MailFragment.cs">
     <Files>
-      <File FileName="NavigationDrawer/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="NavigationDrawer/MailFragment.cs" Line="29" Column="72" />
-      <File FileName="NavigationDrawer/ContactsFragment.cs" Line="29" Column="56" />
+      <File FileName="NavigationDrawer/MainActivity.cs" Line="27" Column="4" />
       <File FileName="NavigationDrawer/Resources/values/Strings.xml" Line="7" Column="1" />
+      <File FileName="NavigationDrawer/ViewModel/ViewModelLocator.cs" Line="50" Column="7" />
+      <File FileName="NavigationDrawer/App.cs" Line="23" Column="65" />
+      <File FileName="NavigationDrawer/ViewModel/CalendarViewModel.cs" Line="10" Column="23" />
+      <File FileName="NavigationDrawer/CalendarFragment.cs" Line="45" Column="4" />
+      <File FileName="NavigationDrawer/ContactsFragment.cs" Line="51" Column="1" NotebookId="1" />
+      <File FileName="NavigationDrawer/MailFragment.cs" Line="79" Column="1" NotebookId="1" />
+      <File FileName="NavigationDrawer/ViewModel/MailViewModel.cs" Line="10" Column="19" NotebookId="1" />
+      <File FileName="NavigationDrawer/ViewModel/ContactsViewModel.cs" Line="16" Column="4" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

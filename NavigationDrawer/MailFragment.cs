@@ -35,7 +35,7 @@ namespace NavigationDrawer
 			{
 				return titleTextView ??
 				  (titleTextView = view.FindViewById<TextView> (
-				   Resource.Id.calendarTitleTextView));
+				   Resource.Id.mailTitleTextView));
 			}
 		}
 
@@ -44,6 +44,20 @@ namespace NavigationDrawer
 			base.OnCreate (savedInstanceState);
 
 			// Create your fragment here
+		}
+
+		public override void OnDestroy ()
+		{
+			base.OnDestroy ();
+
+			foreach (Binding binding in bindings)
+			{
+				binding.Detach ();
+			}
+
+			bindings.Clear ();
+
+			titleTextView = null;
 		}
 
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -61,7 +75,7 @@ namespace NavigationDrawer
 			bindings.Add (this.SetBinding (
 				() => Vm.Title,
 				() => TitleTextView.Text,
-				BindingMode.TwoWay));
+				BindingMode.OneWay));
 		}
 	}
 }

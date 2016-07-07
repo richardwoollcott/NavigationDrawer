@@ -46,6 +46,20 @@ namespace NavigationDrawer
 			// Create your fragment here
 		}
 
+		public override void OnDestroy ()
+		{
+			base.OnDestroy ();
+
+			foreach (Binding binding in bindings)
+			{
+				binding.Detach ();
+			}
+
+			bindings.Clear ();
+
+			titleTextView = null;
+		}
+
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
 			// Use this to return your custom view for this Fragment
@@ -61,7 +75,7 @@ namespace NavigationDrawer
 			bindings.Add (this.SetBinding (
 				() => Vm.Title,
 				() => TitleTextView.Text,
-				BindingMode.TwoWay));
+				BindingMode.OneWay));
 		}
 	}
 }
