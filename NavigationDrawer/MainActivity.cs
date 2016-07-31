@@ -51,8 +51,8 @@ namespace NavigationDrawer
 			//
 			// Set the ActionBarDrawerToggle as a DrawerListener on the DrawerLayout so it receives drawer state-change callbacks
 			//
-			drawerLayout.SetDrawerListener (drawerToggle);
-
+			//drawerLayout.SetDrawerListener (drawerToggle); //marked as obsolete
+            drawerLayout.AddDrawerListener(drawerToggle);
 			// 
 			// Must up-enable the home button, the ActionBarDrawerToggle will change the icon to the "hamburger"
 			//
